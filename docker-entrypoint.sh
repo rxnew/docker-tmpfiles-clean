@@ -9,8 +9,7 @@ target=$1
 expiration=$(awk "BEGIN { print $2/60 }")
 duration=$3
 
-while true
-do
+while true; do
   find "$target" -type f -amin +"$expiration" -delete -print
   sleep "$duration" & wait $!
 done
