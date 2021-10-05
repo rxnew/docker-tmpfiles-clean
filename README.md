@@ -7,5 +7,5 @@ Delete old temporary files using atime.
 The following command deletes `/tmp` files whose atime is before 600 seconds every 30 seconds.
 
 ```shell
-docker run -v /tmp:/tmp ghcr.io/rxnew/tmpfiles-clean /tmp 600 30
+docker run -v /tmp:/tmp ghcr.io/rxnew/docker-tmpfiles-clean /tmp 600 30
 ```
